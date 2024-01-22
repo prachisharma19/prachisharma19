@@ -25,4 +25,29 @@ else:
     for i in range(n):
         print(fibo(i))
 
-***
+***Python program to find sum of natural numbrers using recursion***
+    def NNS(n):
+    if n <= 1:
+        return n 
+    else:
+        return (n)+NNS(n-1)
+n = int(input("Enter a number here: "))
+
+if n <= 0:
+    print("Enter a positive number: ")
+else:
+    print("the sum of natural number upto given number is", NNS(n))
+
+***Python program to find factorial of number using recursion***
+def fact(n):
+    if n == 1:
+        return 1
+    else:
+        return (n* fact(n-1))
+        
+        
+n = int(input("Enter a number here : "))
+if n <= 0:
+    print("Factorial of number less than 1 does not exists")
+else:
+    print("Factorial of the given number is", fact(n))
