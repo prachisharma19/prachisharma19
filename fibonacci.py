@@ -74,3 +74,22 @@ for i in range(len(A)):
         
 for r in result:
   print(r)
+***Palindrome***
+a = input("enter a  word here")
+
+rev = a[::-1]
+
+if a ==  rev:
+    print("It is a palindrome number")
+else:
+    print("It is not a palindrome")
+***Python program to remove punctuations from a string***
+punc = """!()-[ {;'"\,<>./?@#$^*"""
+
+string = input("Enter anything here: ")
+empty_str = ""
+
+for  i in string:
+    if i not in punc:
+        empty_str += i
+print(empty_str)
