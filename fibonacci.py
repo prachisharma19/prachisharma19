@@ -135,4 +135,14 @@ print("The intersection is ", A & B)
 print("The Difference is ", A - B)
 
 print("The Symmetric Difference is ", A ^ B)
-
+***Display current time
+import time
+timestamp = time.strftime('%H:%M:%S')
+print(timestamp)
+timestamp = time.strftime('%H')
+print(timestamp)
+timestamp = time.strftime('%M')
+print(timestamp)
+timestamp = time.strftime('%S')
+print(timestamp)
+***Display Mathcase statement***
