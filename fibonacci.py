@@ -93,3 +93,46 @@ for  i in string:
     if i not in punc:
         empty_str += i
 print(empty_str)
+
+***Display a program to multiply two matrices***
+A = [[1,2,3],
+     [4,5,6],
+     [7,8,9]]
+B = [[1,2,1,1],
+     [4,2,1,2],
+     [6,3,4,1]]
+result = [[0,0,0,0],
+          [0,0,0,0],
+          [0,0,0,0]]    
+          
+          
+for i in range (len(A)):
+    for j in range(len(B[0])):
+        for k in range(len(B)):
+            result[i][j] += A[i][k] * B[k][j]
+for i in result:
+  print(i)
+***Display python program to sort words in alphabetic order***
+    a = "Harry potter and the goblet of fire"
+
+w = a.split()
+print(w)
+for i in range(len(w)):
+    w[i] = w[i].lower()
+print(w)
+w.sort()
+print(w)
+for i in w:
+    print(i)
+***Display python program to Illustrate Different set operations***
+A = {1,2,3,6,8,9}
+B = {3,4,5,6,7,8}
+
+print("The union is ", A|B)
+
+print("The intersection is ", A & B)
+
+print("The Difference is ", A - B)
+
+print("The Symmetric Difference is ", A ^ B)
+
