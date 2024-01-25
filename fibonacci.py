@@ -135,7 +135,7 @@ print("The intersection is ", A & B)
 print("The Difference is ", A - B)
 
 print("The Symmetric Difference is ", A ^ B)
-***Display current time
+***Display current time***
 import time
 timestamp = time.strftime('%H:%M:%S')
 print(timestamp)
@@ -145,4 +145,52 @@ timestamp = time.strftime('%M')
 print(timestamp)
 timestamp = time.strftime('%S')
 print(timestamp)
-***Display Mathcase statement***
+***Display python program to count the number of each vowel using dictionary***
+    a = "Harry Potter and the Prisoner of Azkaban"
+
+vowels = "aeiou"
+a = a.casefold()
+print(a)
+
+count = {}.fromkeys(vowels,0)
+
+for char in a:
+    if char in count:
+        count[char]+=1
+        
+print(count)
+***Display python program to count the number of each vowel using list and dictionary comprehen***
+a = "Harry Potter and the Prisoner of Azkaban"
+
+vowels = "aeiou"
+a = a.casefold()
+print(a)
+
+count = {key:sum([1 for char in a if char == key]) for key in vowels}
+print(count)
+***Display python program to find the size (resolution) of a image***
+import PIL
+from PIL import image
+
+img =PIL.image.open("https://unsplash.com/photos/a-bunch-of-pink-donuts-are-stacked-on-top-of-each-other-obyYZVKwCNI")
+width, height = img.size
+
+print(width,"x", height)
+
+***Python program to merge two dictionaries using operator***
+dict1 = {"John":89, "Lisa": 99}
+dict2 = {"Lisa":94, "Peter":78}
+
+print(dict1|dict2)
+***Python program to merge two dictionaries using update method***
+dict1 = {"John":89, "Lisa": 99}
+dict2 = {"Lisa":94, "Peter":78}
+
+dict3 = dict2.copy()
+print(dict3.update(dict1))
+
+print(dict3)
+
+***Display program to safely create a nested directory***
+from pathlib import Path
+Path("").mkdir(parents=True,exist_ok=True)
