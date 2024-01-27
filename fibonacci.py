@@ -194,3 +194,54 @@ print(dict3)
 ***Display program to safely create a nested directory***
 from pathlib import Path
 Path("").mkdir(parents=True,exist_ok=True)
+
+**Display python programm to access index of a list using for a loop using enumerate method***
+l = [34,5,61,54,89]
+for index, value in enumerate(l):
+    print(index, value)
+**Display python programm to access index of a list using for a loop without using enumerate method***    
+l = [34,5,61,54,89]
+for index in range (len(l)):
+    value = l[index]
+    print(index, value)
+
+***python programto slice lists***
+a = ["joe", "rachel", "monica", "phoebe", "ross", "chandler"]
+print(a[-6:-3])
+print(a[1:4])
+print(a[::])
+print(a[:3])
+print(a[5:])
+print(a[::2])
+***Display dictionaries using for loop with.items***
+friends = {"Rachel":"Ross", "Monica":"Chandler", "Phoebe":"Joe"}
+print(friends)
+
+for key,value in friends.items():
+    print(key,value)
+for key in friends.items():
+    print(key)
+for i in friends.items():
+    print(i)
+
+***Display python program to sort a dictionary by value***
+marks = {"John":23, "Lisa":56, "Sid": 48}
+print(marks)
+
+sv = sorted(marks.items(), key = lambda x : x[1])
+print(sv)
+# sort only two values
+v = sorted(marks.values())
+print(v)
+***Display program to check if a list is empty***
+my_list = [12]
+if not my_list:
+    print("the list is empty")
+    **Using len function**
+my_list = []
+if len(my_list) == 0:
+    print)"the list is empty")
+    **use of square bracet**
+    my_list = [12,4,45,7]
+if len(my_list) == []:
+    print("the list is empty")
